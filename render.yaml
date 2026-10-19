@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: ukitechsolutions
+    runtime: docker
+    plan: starter
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TRUST_PROXY
+        value: "1"
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_SECURE
+        value: "false"
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: CONTACT_EMAIL
+        value: iliyasuukacha660@gmail.com
+      - key: FROM_EMAIL
+        sync: false

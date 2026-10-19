@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Send a message about learning topics, website feedback, or ideas for future tutorials.">
+  <title>Contact | UKITECHSOLUTIONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="UKITECHSOLUTIONS home">
+        <span class="brand-mark"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+        <span class="brand-text">UKI<span>TECH</span><small>SOLUTIONS</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="cybersecurity.html">Cybersecurity</a>
+<a href="technology.html">Technology</a>
+<a href="computer-science.html">Computer Science</a>
+<a href="programming.html">Programming</a>
+<a href="networking.html">Networking</a>
+<a href="projects.html">Projects</a>
+<a href="tutorials.html">Tutorials</a>
+<a href="resources.html">Resources</a>
+<a href="contact.html">Contact</a></nav>
+      <div class="header-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour theme" title="Switch colour theme"><i class="fa-solid fa-moon" aria-hidden="true"></i></button><a class="header-cta" href="projects.html">Explore projects <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero inner-hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span>GET IN TOUCH</div>
+        <h1>Have a question<br><span>or a project idea?</span></h1>
+        <p class="hero-intro">Send a message about learning topics, website feedback, or ideas for future tutorials.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="tutorials.html">Start learning <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-outline" href="projects.html">Explore projects</a></div>
+        <div class="hero-badges"><span><i class="fa-solid fa-book-open"></i> Clear explanations</span><span><i class="fa-solid fa-flask"></i> Hands-on practice</span></div>
+        
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="tech-core"><div class="core-ring"><i class="fa-solid fa-microchip"></i></div><span class="core-label">BUILD / LEARN / SECURE</span></div>
+        <div class="float-chip chip-one"><i class="fa-solid fa-shield-halved"></i><span>Security first</span></div>
+        <div class="float-chip chip-two"><i class="fa-solid fa-terminal"></i><span>Build projects</span></div>
+        <div class="float-chip chip-three"><i class="fa-solid fa-network-wired"></i><span>Connect ideas</span></div>
+      </div>
+    </section>
+    
+    <section class="section-wrap topics-section" aria-labelledby="topics-title">
+      <div class="section-heading reveal">
+        <div><div class="section-kicker">LEARNING PATHS</div><h2 id="topics-title">Contact the hub</h2></div>
+        <p>Contact UKITECHSOLUTIONS directly or send a message using the secure contact form below.</p>
+      </div>
+      <div class="topic-grid"></div>
+    </section>
+    
+    
+        <section class="contact-layout section-wrap" aria-labelledby="contact-form-title">
+          <div class="contact-copy">
+            <div class="section-kicker">LET'S CONNECT</div>
+            <h2 id="contact-form-title">Send a message</h2>
+            <p>Tell us what you are learning or what topic you would like to see covered. Do not include passwords or sensitive personal information.</p>
+            <div class="contact-direct-links"><a class="btn btn-primary" href="tel:+2349067177330"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call +234 906 717 7330</a><a class="btn btn-outline" href="https://wa.me/2349067177330" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp us</a><a class="contact-email" href="mailto:iliyasuukacha660@gmail.com">iliyasuukacha660@gmail.com</a></div>
+            <div class="contact-note"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span>Messages are submitted to the website server. Email notifications work only after the site owner configures SMTP settings.</span></div>
+          </div>
+          <form id="contactForm" class="site-form" action="/api/contact" method="post">
+            <div class="hp-field" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+            <label for="contactName">Your name</label>
+            <input id="contactName" name="name" autocomplete="name" required maxlength="80" placeholder="Enter your name">
+            <label for="contactEmail">Email address</label>
+            <input id="contactEmail" name="email" type="email" autocomplete="email" required maxlength="160" placeholder="you@example.com">
+            <label for="contactTopic">Topic</label>
+            <select id="contactTopic" name="topic" required>
+              <option value="">Choose a topic</option><option>Cybersecurity</option><option>Programming</option><option>Networking</option><option>Computer science</option><option>Website feedback</option><option>Other</option>
+            </select>
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="5" required minlength="10" maxlength="2000" placeholder="How can we help?"></textarea>
+            <button class="btn btn-primary" type="submit">Send message securely <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+    <section class="newsletter section-wrap reveal">
+      <div class="newsletter-icon"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i></div>
+      <div class="newsletter-copy"><div class="section-kicker">STAY CURIOUS</div><h2>Keep learning with UKITECHSOLUTIONS</h2><p>Newsletter signup is currently unavailable. Please contact us directly if you want updates.</p></div>
+      <div class="newsletter-form"><a class="btn btn-primary" href="mailto:iliyasuukacha660@gmail.com?subject=UKITECH%20HUB%20Updates">Request updates by email</a><p class="form-status">No newsletter subscription is collected until a mailing service is configured.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-main section-wrap">
+      <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-code" aria-hidden="true"></i></span><span class="brand-text">UKI<span>TECH</span><small>SOLUTIONS</small></span></a><p>A practical learning hub for technology, computing, and responsible cybersecurity.</p><div class="social-links"><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div>
+      <div class="footer-column"><h3>Explore</h3><a href="cybersecurity.html">Cybersecurity</a><a href="programming.html">Programming</a><a href="networking.html">Networking</a><a href="projects.html">Projects Lab</a></div>
+      <div class="footer-column"><h3>Learn</h3><a href="computer-science.html">Computer Science</a><a href="technology.html">Technology</a><a href="tutorials.html">Tutorials</a><a href="resources.html">Resources</a></div>
+      <div class="footer-column"><h3>UKITECHSOLUTIONS</h3><a href="about.html">About the hub</a><a href="contact.html">Contact</a><a href="#top">Back to top ↑</a></div>
+    </div>
+    <div class="footer-bottom"><p>© <span id="currentYear"></span> UKITECHSOLUTIONS. Built for curious learners.</p><p>Learn responsibly. Practise ethically. Keep improving.</p></div>
+  </footer>
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</body>
+</html>
